@@ -39,7 +39,7 @@ services:
       - EMAIL_SMTP_SENDER_EMAIL=${EMAIL_SMTP_SENDER_EMAIL}
       - ALLOW_MULTIPLE_ORGS=${ALLOW_MULTIPLE_ORGS:-false}
     volumes:
-      - "${DBT_PROJECT_DIR}:/usr/app/dbt"
+      - "${DBT_PROJECT_DIR}:./usr/app/dbt"
     ports:
       - ${PORT:-8080}:${PORT:-8080}
 
