@@ -47,3 +47,5 @@ services:
 
 volumes:
   db-data:
+        - "${DBT_PROJECT_DIR}:/usr/app/dbt"
+
