@@ -45,7 +45,4 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
 
-volumes:
-  - "${DBT_PROJECT_DIR}:/usr/app/dbt"
-  db-data:
 
